@@ -46,7 +46,7 @@ class Student{
   //functions 
   void greeting() {
     // System.out.println("Hello My name is " + name);
-    //even if name and not this.name it will print the same, sill always use this.name
+    //even if name and not this.name it will print the same, still always use this.name
     System.out.println("Hello My name is " + this.name);
   }
   void display(){
