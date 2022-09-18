@@ -126,17 +126,17 @@ public void addInMiddle(int index, String data) {
   }
   
   Node currNode = head;
+//adding in between 
+  for(int i=1; i<size; i++) {
+      if(i == index) {
+          Node nextNode = currNode.next;
 
-  // for(int i=1; i<size; i++) {
-  //     if(i == index) {
-  //         Node nextNode = currNode.next;
-
-  //         currNode.next = newNode;
-  //         newNode.next = nextNode;
-  //         break;
-  //     }
-  //     currNode = currNode.next;
-  // }
+          currNode.next = newNode;
+          newNode.next = nextNode;
+          break;
+      }
+      currNode = currNode.next;
+  }
 }
 
 
