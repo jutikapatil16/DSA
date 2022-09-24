@@ -8,10 +8,10 @@ public class LL {
   //3.  Node class
   public class Node {
     // declare data and next
-      String data;
+      int data;
       Node next;
     // Node constructor
-    public Node(String data) {
+    public Node(int data) {
         //data , next
           this.data = data;
           this.next = null;
@@ -22,7 +22,7 @@ public class LL {
 
 //4. addFirst
 
-  public void addFirst(String data) {
+public void addFirst(int data) {
     Node newNode = new Node(data);
     //object then logic
     //newnode ka next pointing to head 
@@ -33,7 +33,7 @@ public class LL {
 
 //5. addLast
 
-public void addLast(String data) {
+public void addLast(int data) {
   Node newNode = new Node(data);
 
   if(head == null) {
@@ -104,8 +104,8 @@ public int getSize() {
   return size;
 }
 
-//0. add in the middle
-public void addInMiddle(int index, String data) {
+//10. add in the middle
+public void addInMiddle(int index, int data) {
 
   //invalid
   if(index > size || index < 0) {
@@ -140,22 +140,22 @@ public void addInMiddle(int index, String data) {
 }
 
 
-   public static void main(String args[]) {
-       LinkedList<String> list = new LinkedList<String>();
-       list.add("is");
-       list.add("a");
-       list.addLast("list");
-       list.addFirst("this");
+   public static void main(int args[]) {
+      //  LinkedList<int> list = new LinkedList<int>();
+      //  list.add("is");
+      //  list.add("a");
+      //  list.addLast("list");
+      //  list.addFirst("this");
 
-       System.out.println(list);
+      //  System.out.println(list);
       //  list.add(3, "linked");
       //  System.out.println(list.get(0));
       //  System.out.println(list.getSize());   
       //  list.remove(3);
-       list.removeFirst();
-       list.removeLast();
+      //  list.removeFirst();
+      //  list.removeLast();
       
-       System.out.println(list);
+      //  System.out.println(list);
    }
 }
 
